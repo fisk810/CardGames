@@ -10,6 +10,19 @@ public class CardSet {
     public CardSet() {
     }
 
+
+    public void createSet(){
+        String[] suits = {"diamonds", "hearts", "clubs", "spades"};
+
+        for (int i = 0; i < 4; i++) {
+            for (int e = 1; e <= 13; e++) {
+                set.add(new Card(e, suits[i]));
+            }
+
+        }
+    }
+
+
     public ArrayList<Card> getSet() {
         return set;
     }
@@ -18,15 +31,6 @@ public class CardSet {
         this.set = set;
     }
 
-    public void createSet(){
 
-        for (int i = 1; i < 5; i++) {
-            for (int e = 1; e <= 13; e++) {
-                set.add(new Card(e, i));
-            }
-
-        }
-        System.out.println(set);
-    }
 
 }
