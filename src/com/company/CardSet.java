@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class CardSet {
     Card[] set = new Card[52];
@@ -15,5 +16,14 @@ public class CardSet {
             }
 
         }
+    }
+
+
+    public void setSet(Card[] set) {
+        this.set = set;
+    }
+
+    public Card[] getSet() {
+        return set;
     }
 }
