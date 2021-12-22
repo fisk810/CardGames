@@ -3,7 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        CardSet c = new CardSet();
-        c.shuffle();
+        /*
+        BlackJack bjGame = new BlackJack();
+
+        bjGame.startGame(1);
+        bjGame.cardHandOut();
+
+         */
+
+        CardController c = new CardController();
+
+
     }
 }

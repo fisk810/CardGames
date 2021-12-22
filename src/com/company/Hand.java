@@ -1,14 +1,20 @@
 package com.company;
 
-public class Hand {
-    Card[] cards;
+import java.util.ArrayList;
 
-    public Hand(Card[] cards) {
+public class Hand {
+    ArrayList<Card> cards;
+
+    public Hand() {
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(ArrayList<Card> cards) {
         this.cards = cards;
     }
 
 
-    public Card[] getCards() {
-        return cards;
-    }
 }
